@@ -6,6 +6,14 @@
 body {
   font-family: "League Spartan", sans-serif;
 }
+body {
+  background-image: url("images/bg-pattern-top-mobile.svg"),
+    url("images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  /* background-attachment: fixed, fixed; */
+  background-position: top left, bottom left;
+}
+
 :root {
   /* Primary Colors */
   --very-dark-magenta: hsl(300, 43%, 22%);
@@ -137,6 +145,15 @@ html {
 }
 
 @media only screen and (min-width: 800px) {
+  body {
+    background-image: url("images/bg-pattern-top-desktop.svg"),
+      url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    /* background-attachment: fixed, fixed; */
+    background-position: top left, bottom right;
+    background-position-x: -3.5rem, 15rem;
+  }
+
   .container {
     /* border: 2px solid red; */
     display: flex;
